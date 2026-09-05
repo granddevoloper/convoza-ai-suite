@@ -65,7 +65,7 @@ export function SiteHeader() {
                 <Link
                   key={l.label}
                   to={l.to}
-                  hash={l.hash}
+                  {...(l.hash ? { hash: l.hash } : {})}
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {l.label}
@@ -103,7 +103,7 @@ export function SiteHeader() {
                 <li key={l.label}>
                   <Link
                     to={l.to}
-                    hash={l.hash}
+                    {...(l.hash ? { hash: l.hash } : {})}
                     onClick={() => setOpen(false)}
                     className="block rounded-lg px-2 py-2 text-sm text-muted-foreground hover:bg-secondary hover:text-foreground"
                   >
@@ -225,7 +225,7 @@ function FooterCol({
             <Link
               // eslint-disable-next-line @typescript-eslint/no-explicit-any
               to={i.to as any}
-              hash={i.hash}
+              {...(i.hash ? { hash: i.hash } : {})}
               className="text-sm text-muted-foreground transition-colors hover:text-primary"
             >
               {i.label}
