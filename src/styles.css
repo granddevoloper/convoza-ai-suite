@@ -101,6 +101,16 @@
   --secondary-foreground: var(--ink);
   --accent: oklch(0.93 0.014 92);
   --accent-foreground: var(--ink);
+  --surface: oklch(0.985 0.008 92);
+  --surface-2: oklch(0.93 0.014 92);
+  --color-background: var(--bone);
+  --color-foreground: var(--ink);
+  --color-card: oklch(0.985 0.008 92);
+  --color-card-foreground: var(--ink);
+  --color-muted-foreground: var(--ink-muted);
+  --color-border: oklch(0.87 0.018 90);
+  --color-secondary: oklch(0.93 0.014 92);
+  --color-secondary-foreground: var(--ink);
   background-color: var(--bone);
   color: var(--ink);
 }
